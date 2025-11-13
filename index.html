@@ -22,34 +22,34 @@
 
       <label for="pan">Tipo de Pan:</label>
           <div class="radio-list">
-              <label for="clasico"><input type="radio" name="pan">Clásico</label>
-              <label for="ajonjoli"><input type="radio" name="pan">Con Ajonjolí (+20 MXN)</label>
-              <label for="integral"><input type="radio" name="pan">Integral (+20 MXN)</label>
-              <label for="brioche"><input type="radio" name="pan">Brioche (+50 MXN)</label>
+              <label for="clasico"><input type="radio" name="pan" value="clasico">Clásico</label>
+              <label for="ajonjoli"><input type="radio" name="pan" value="ajonjoli">Con Ajonjolí (+20 MXN)</label>
+              <label for="integral"><input type="radio" name="pan" value="integral">Integral (+20 MXN)</label>
+              <label for="brioche"><input type="radio" name="pan" value="brioche">Brioche (+50 MXN)</label>
           </div>
 
       <label>Ingredientes adicionales (5.00 MXN c/u):</label>
       <div class="checkbox-list">
-        <label><input type="checkbox" value="queso"> Queso</label>
-        <label><input type="checkbox" value="lechuga"> Lechuga</label>
-        <label><input type="checkbox" value="jitomate"> Jitomate</label>
-        <label><input type="checkbox" value="cebolla"> Cebolla</label>
-        <label><input type="checkbox" value="jalapeño"> Jalapeño</label>
-        <label><input type="checkbox" value="huevo"> Huevo</label>
-        <label><input type="checkbox" value="pepino"> Pepino</label>
-        <label><input type="checkbox" value="champiñones"> Champiñones</label>
-        <label><input type="checkbox" value="tocino"> Tocino extra</label>
-        <label><input type="checkbox" value="dobleQueso"> Doble Queso</label>
-        <label><input type="checkbox" value="piña"> Piña</label>
-        <label><input type="checkbox" value="guacamole"> Guacamole</label>
-        <label><input type="checkbox" value="bbq"> Salsa BBQ</label>
-        <label><input type="checkbox" value="chipotle"> Aderezo Chipotle</label>
-        <label><input type="checkbox" value="mayonesa"> Mayonesa</label>
-        <label><input type="checkbox" value="mostaza"> Mostaza</label>
-        <label><input type="checkbox" value="ketchup"> Ketchup</label>
-        <label><input type="checkbox" value="pepperoni"> Pepperoni</label>
-        <label><input type="checkbox" value="arugula"> Arúcula</label>
-        <label><input type="checkbox" value="cebollaCaramelizada"> Cebolla Caramelizada</label>
+        <label><input type="checkbox" value="queso" name="queso"> Queso</label>
+        <label><input type="checkbox" value="lechuga" name="lechuga"> Lechuga</label>
+        <label><input type="checkbox" value="jitomate" name="jitomate"> Jitomate</label>
+        <label><input type="checkbox" value="cebolla" name="cebolla"> Cebolla</label>
+        <label><input type="checkbox" value="jalapeño" name="jalapeño"> Jalapeño</label>
+        <label><input type="checkbox" value="huevo" name="huevo"> Huevo</label>
+        <label><input type="checkbox" value="pepino" name="pepino"> Pepino</label>
+        <label><input type="checkbox" value="champiñones" name="champiñones"> Champiñones</label>
+        <label><input type="checkbox" value="tocino" name="tocino"> Tocino extra</label>
+        <label><input type="checkbox" value="dobleQueso" name="dobleQueso"> Doble Queso</label>
+        <label><input type="checkbox" value="piña" name="piña"> Piña</label>
+        <label><input type="checkbox" value="guacamole" name="guacamole"> Guacamole</label>
+        <label><input type="checkbox" value="bbq" name="bbq"> Salsa BBQ</label>
+        <label><input type="checkbox" value="chipotle" name="chipotle"> Aderezo Chipotle</label>
+        <label><input type="checkbox" value="mayonesa" name="mayonesa"> Mayonesa</label>
+        <label><input type="checkbox" value="mostaza" name="mostaza"> Mostaza</label>
+        <label><input type="checkbox" value="ketchup" name="ketchup"> Ketchup</label>
+        <label><input type="checkbox" value="pepperoni" name="pepperoni"> Pepperoni</label>
+        <label><input type="checkbox" value="arugula" name="arugula"> Arúcula</label>
+        <label><input type="checkbox" value="cebollaCaramelizada" name="cebollaCaramelizada"> Cebolla Caramelizada</label>
       </div>
 
       <label for="cantidad">Cantidad de Baguettes:</label>
@@ -59,10 +59,13 @@
         <input type="checkbox" id="domicilio" name="domicilio">
         ¿Es a domicilio? (+$30 MXN)
       </label>
+      <label for="total">
+        <div class="total" id="total" name="total">
+        Total: $0.00</div>
+      </label>
 
-      <div class="total" id="total">Total: $0.00</div>
+      <button type="button" class="submit-btn" onclick="calcular()" id="total">Calcular Total</button>
 
-      <button type="button" class="submit-btn" onclick="calcular()">Calcular Total</button>
     </form>
     <div class="imagenes">
       <img src="img/75869405.jpg" alt="Baguette 1">
